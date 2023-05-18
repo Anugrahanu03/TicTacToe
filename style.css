@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #181818;
+    font-family: 'Poppins', sans-serif;
+}
+.card {
+    --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+    width: 100vw;
+    height: 20vh;
+    padding: 5px;
+    border-radius: 1rem;
+    overflow: visible;
+    background: #f7ba2b;
+    background: var(--background);
+    position: relative;
+    z-index: 1;
+   }
+   
+   /* .card::after {
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    transform: scale(0.8);
+    filter: blur(25px);
+    background: #f7ba2b;
+    background: var(--background);
+    transition: opacity .5s;
+   } */
+   
+   .card-info {
+    --color: #181818;
+    background: var(--color);
+    color:#f7ba2b;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    border-radius: .7rem;
+   }
+   
+   .card .title {
+    font-weight: bold;
+    letter-spacing: .1em;
+   }
+   
+   /* Hover
+   .card:hover::after {
+    opacity: 0;
+   }
+    */
+   .card:hover .card-info {
+    transition: .8s;
+    font-size: 50px;
+   }
+   .box{
+    height: 75vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   }
+   .rows{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+    width: 60vh;
+    padding: 5px;
+   }
+   .row1{
+    display: flex;
+    height: 33.333%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+   }
+   .row{
+    background-color: #393939;
+    height: 100%;
+    width: 33.333%;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: 200;
+    color: #f7ba2b;
+   }
+   .row:hover{
+    cursor: pointer;
+    background-color: #ea5358;
+    border-radius: 5px;
+   }
+   .footer{
+    height: 5vh;
+    background: #ea5358;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .contact h3{
+    font-size: 15px;
+   }
+   .contact{
+    flex:1.2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+   }
+   .icons{
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   }
